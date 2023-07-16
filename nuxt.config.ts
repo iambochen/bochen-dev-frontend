@@ -37,5 +37,11 @@ export default defineNuxtConfig({
                 host: 'localhost'
             }
         },
-    }
+    },
+    plugins: [
+        {
+            src: '~/plugins/vercel.js',
+            mode: 'client',
+        },
+    ],
 })
